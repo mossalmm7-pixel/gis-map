@@ -189,7 +189,7 @@ if st.session_state.points_etm:
         y=ys,
         mode="lines+markers",
         fill="toself",
-        name="Parcel"
+        name="area"
     ))
 
     fig.add_trace(go.Scatter(
@@ -207,7 +207,7 @@ if st.session_state.points_etm:
         height=850,
         title=f"Parcel — {st.session_state.map_number}",
         dragmode="pan",
-        plot_bgcolor="#eef"
+        plot_bgcolor="#048c41"
     )
 
     st.plotly_chart(fig, use_container_width=True, config={"scrollZoom": True})
